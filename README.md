@@ -16,8 +16,12 @@ Program bebas, kecuali program Mahasiswa dan Book Author
 
 ## Design Program
 Pada program ini terdapat 6 class dan yang menjadi ***Main Class*** adalah login, berikut detail tiap class :
-- **dbConnection** -> Class ini digunakan untuk menyambungkan program dengan database mysql. Class ini memiliki 2 atribut, yaitu stmt dan conn. Method-method yang ada di class ini digunakan untuk membantu proses query dari aplikasi ke database.
-- **Login** -> Class yang 
+- **dbConnection** -> Class ini digunakan untuk melakukan koneksi ke database. Class ini memiliki 2 atribut, yaitu stmt dan conn. Method-method yang ada di class ini digunakan untuk membantu proses query dari aplikasi ke database.
+- **Login** -> Class ini mengimplementasikan sebuah frame login dengan method cekData() yang digunakan untuk memeriksa apakah data yang dimasukkan oleh user sudah benar atau belum. Class ini memiliki 1 atribut, yaitu db yang merupakan instansiasi dari class dbConnection untuk melakukan koneksi ke database.
+- **Register** -> Class ini mengimplementasikan sebuah frame Register dengan method insertData() yang digunakan untuk memasukkan data baru ke dalam database, dan method resetForm() yang digunakan untuk mengosongkan form saat user ingin membatalkan pengisian data. Class ini memiliki 3 atribut, yaitu db untuk koneksi ke database, selectedFile untuk menyimpan file image yang dimasukkan user, dan path untuk menyimpan path dari file foto.
+- **JPanelCard** -> Class ini memiliki method setPanel() yang digunakan untuk menampilkan daftar member dari suatu idol group dalam bentuk Card menggunakan GridLayout dan setGroup() untuk menampilkan informasi mengenai data group tersebut. Class ini memiliki 4 atribut, yaitu db untuk koneksi ke database dan kode_group, nama_group, foto_group untuk menyimpan data group dari query. 
+- **Member** -> 
+- **Card** ->
 
 ## Design GUI
 - Form Login
@@ -59,6 +63,12 @@ Pada program ini terdapat 6 class dan yang menjadi ***Main Class*** adalah login
 6. Jika data yang dimasukkan salah, user dapat menekan tombol no ketika ***prompt konfirmasi***, maka data akan direset.
 7. Untuk memperbaharui data member, user dapat menekan tombol edit pada data member yang ingin di update dan program akan menampilkan form data member tersebut.
 8. Untuk menghapus data member, user dapat menekan tombol delete pada data member yang ingin di delete dan program akan otomatis mengupdate data member pada grup tersebut.
+
+- Untuk mencoba login bisa gunakan akun berikut
+1. Kode Group = nj
+   password = nj
+2. Kode group = rv
+   password = rv
 
 ## Dokumentasi
 https://youtu.be/xuaWH8GvIjE
