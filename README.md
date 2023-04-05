@@ -17,3 +17,20 @@ Program bebas, kecuali program Mahasiswa dan Book Author
 ## Design Program
 - **bruh** -> Class yang
 - **bruh1** -> Class yang 
+
+## Design GUI
+
+## ERD
+
+## Alur Progam
+1. User bisa melakukan registrasi jika belum memiliki akun dengan menekan tombol register pada halaman login kemudian mengisi form pada halaman registrasi. (NOTE : setiap form harus diisi secara lengkap, jika tidak akan menampikan pesan error karena datanya belum lengkap)
+2. Setelah registrasi, program akan mengarahkan ke halaman login dan user dapat mengisi form pada halaman login.
+3. Setelah login, program akan mengarahkan ke halaman home. Di halaman home ini, user dapat melakukan add, delete, dan update, serta log out.
+4. Untuk menambahkan data member, user dapat menekan tombol Add Member dan program akan menampilkan form untuk data member.
+5. Jika sudah selesai mengisi data member, user dapat menekan tombol submit untuk menambahkan data ke database.
+6. Jika data yang dimasukkan salah, user dapat menekan tombol no ketika **prompt konfirmasi**, maka data akan direset.
+7. Untuk memperbaharui data member, user dapat menekan tombol edit pada data member yang ingin di update dan program akan menampilkan form data member tersebut.
+8. Untuk menghapus data member, user dapat menekan tombol delete pada data member yang ingin di delete dan program akan otomatis mengupdate data member pada grup tersebut.
+
+## Dokumentasi
+https://youtu.be/xuaWH8GvIjE
