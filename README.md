@@ -15,20 +15,48 @@ Program bebas, kecuali program Mahasiswa dan Book Author
 - Boleh login dan/atau register. Tidak perlu ada enkripsi password
 
 ## Design Program
-- **bruh** -> Class yang
-- **bruh1** -> Class yang 
+Pada program ini terdapat 6 class dan yang menjadi ***Main Class*** adalah login, berikut detail tiap class :
+- **dbConnection** -> Class ini digunakan untuk menyambungkan program dengan database mysql. Class ini memiliki 2 atribut, yaitu stmt dan conn. Method-method yang ada di class ini digunakan untuk membantu proses query dari aplikasi ke database.
+- **Login** -> Class yang 
 
 ## Design GUI
+- Form Login
+
+![image](https://user-images.githubusercontent.com/100755457/230007694-e85ca5fb-a70d-4545-b0a2-aad15942bc5d.png)
+
+
+- Form Register
+
+![image](https://user-images.githubusercontent.com/100755457/230007597-415bd0ab-f989-425f-955b-c0a131d8298f.png)
+
+
+- Form Data Member
+
+![image](https://user-images.githubusercontent.com/100755457/230007407-2b5f857a-a997-4cc2-a15e-d9804e357278.png)
+
+
+- JPanel
+
+![image](https://user-images.githubusercontent.com/100755457/230007282-b7c75bbb-a244-44e6-82f1-548d2d7b786f.png)
+
+
+- Card
+
+![image](https://user-images.githubusercontent.com/100755457/230007100-f0e939b4-276f-469b-88ca-7445bedf99cc.png)
+
 
 ## ERD
 
+![image](https://user-images.githubusercontent.com/100755457/230006593-31b1e763-8f19-4278-a677-ec17bfe2d60d.png)
+
+
 ## Alur Progam
-1. User bisa melakukan registrasi jika belum memiliki akun dengan menekan tombol register pada halaman login kemudian mengisi form pada halaman registrasi. (NOTE : setiap form harus diisi secara lengkap, jika tidak akan menampikan pesan error karena datanya belum lengkap)
+1. User bisa melakukan registrasi jika belum memiliki akun dengan menekan tombol register pada halaman login kemudian mengisi form pada halaman registrasi. (NOTE : ***setiap form harus diisi secara lengkap, jika tidak akan menampikan pesan error karena datanya belum lengkap***)
 2. Setelah registrasi, program akan mengarahkan ke halaman login dan user dapat mengisi form pada halaman login.
 3. Setelah login, program akan mengarahkan ke halaman home. Di halaman home ini, user dapat melakukan add, delete, dan update, serta log out.
 4. Untuk menambahkan data member, user dapat menekan tombol Add Member dan program akan menampilkan form untuk data member.
 5. Jika sudah selesai mengisi data member, user dapat menekan tombol submit untuk menambahkan data ke database.
-6. Jika data yang dimasukkan salah, user dapat menekan tombol no ketika **prompt konfirmasi**, maka data akan direset.
+6. Jika data yang dimasukkan salah, user dapat menekan tombol no ketika ***prompt konfirmasi***, maka data akan direset.
 7. Untuk memperbaharui data member, user dapat menekan tombol edit pada data member yang ingin di update dan program akan menampilkan form data member tersebut.
 8. Untuk menghapus data member, user dapat menekan tombol delete pada data member yang ingin di delete dan program akan otomatis mengupdate data member pada grup tersebut.
 
