@@ -15,6 +15,10 @@ Program bebas, kecuali program Mahasiswa dan Book Author
 - Boleh login dan/atau register. Tidak perlu ada enkripsi password
 
 ## Design Program
+
+![design tp2](https://user-images.githubusercontent.com/100755457/230949345-1de4d1ad-a09c-4c4f-8f98-0451db4e8cb5.jpg)
+
+
 Pada program ini terdapat 6 class dan yang menjadi ***Main Class*** adalah login, berikut detail tiap class :
 - **dbConnection** -> Class ini digunakan untuk melakukan koneksi ke database. Class ini memiliki 2 atribut, yaitu stmt dan conn. Method-method yang ada di class ini digunakan untuk membantu proses query dari aplikasi ke database.
 
